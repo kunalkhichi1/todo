@@ -34,7 +34,9 @@
       :onConfirm="confirmDelete"
       :onCancel="closePopup"
     >
-      <template #message>Are you sure you want to delete this todo?</template>
+      <template v-slot:message
+        >Are you sure you want to delete this todo?</template
+      >
     </ConfirmPopup>
   </li>
 </template>
